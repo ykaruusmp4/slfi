@@ -8,7 +8,7 @@ A programming language designed for ultimate simplicity on the outside, and monu
 
 ## 🚀 Features & Roadmap
 
-- [x] **C Migration:** Core compiler architecture rewritten from Python to pure C.
+- [ ] **C Migration:** Core compiler architecture rewritten from Python to pure C.
 - [ ] **Print and Package:** Enables the language to display text on the terminal and initialize packages.
 - [ ] **Variables:** Enables the language to store data.
 - [ ] **Conditionals:** Support for `if`, `elif`, and `else`.
@@ -46,7 +46,7 @@ You only need a C compiler like **GCC** or **Clang** installed on your system.
    package main
 
    init main() {
-       print "Hello from SLFI!"; \$ This is a Commentary! :3
+       print "Hello from SLFI!"; $ This is a Commentary! :3
    }
    ```
 
