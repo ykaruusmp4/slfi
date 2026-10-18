@@ -1,1 +1,7 @@
 $ Hii this is a Commentary :P
+
+package main
+
+init main() {
+	print "Hello, World";
+}
