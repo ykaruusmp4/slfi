@@ -50,12 +50,12 @@ You need **Python 3** and a C compiler like **GCC** installed on your system.
 
    ```
 
-   2. Compile and run using the prototype driver:
+2. Compile and run using the prototype driver:
 
-      ```fish
-      python slfi.py main.slfi # or any other way, the slfi.py just need to be side-by-side with the main.slfi
-      ./main
-      ```
+   ```fish
+     python slfi.py main.slfi # or any other way, the slfi.py just need to be side-by-side with the main.slfi
+    ./main
+   ```
 
 ---
 
