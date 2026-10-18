@@ -1,9 +1,5 @@
-$ Copyright (C) 2026 ykaruusmp4. Licensed under the GNU AGPLv3.
-
-$ Hii this is a Commentary :P
-
 package main
 
 init main() {
-	print "Hello, World";
+	print "Hello from SLFI!"; $ This is a Commentary! :3
 }

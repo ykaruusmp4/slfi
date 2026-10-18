@@ -28,7 +28,7 @@ You only need a C compiler like **GCC** or **Clang** installed on your system.
 1. Clone the repository:
 
    ```fish
-   git clone https://github.com
+   git clone https://github.com/ykaruusmp4/slfi.git
    cd slfi
    ```
 
