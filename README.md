@@ -34,9 +34,7 @@ You need **Python 3** and a C compiler like **GCC** installed on your system.
 2. Install the parser engine:
 
    ```fish
-   pip install lark
-
-   # or use a venv in Arch Linux and Others PEP Operational Systems.
+   pip install lark # or use a venv in Arch Linux and Others PEP Operational Systems.
    ```
 
 ### Running your first `.slfi` script
@@ -44,14 +42,18 @@ You need **Python 3** and a C compiler like **GCC** installed on your system.
 1. Create a file named `main.slfi`:
 
    ```text
-   print "Hello from SLFI!";
-   ```
+   package main
+
+   init main() {
+      print "Hello from SLFI!"; $ This is a Commentary! :3
+   }
+
+   ```text
 
 2. Compile and run using the prototype driver:
 
    ```fish
-   python slfi.py main.slfi
-   # or any other way, the slfi.py just need to be side-by-side if the main.slfi
+   python slfi.py main.slfi # or any other way, the slfi.py just need to be side-by-side with the main.slfi
    ./main
    ```
 
