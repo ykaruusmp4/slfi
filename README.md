@@ -1,6 +1,6 @@
 # 💡 SLFI — Scripting Language for Idiots
 
-A programming language designed for ultimate simplicity on the outside, and monumental independence on the inside. Currently prototyping via a fast Python-to-C transpiler, moving towards a completely self-hosted ecosystem (custom compiler, linker, object format, and LSP).
+A programming language designed for ultimate simplicity on the outside, and monumental independence on the inside. Originally planned as a Python prototype, the compiler is being written entirely from scratch in C, moving towards a completely self-hosted ecosystem (custom compiler, linker, object format, and LSP).
 
 > "Simplicity is the ultimate sophistication... or just for idiots."
 
@@ -8,7 +8,8 @@ A programming language designed for ultimate simplicity on the outside, and monu
 
 ## 🚀 Features & Roadmap
 
-- [x] **Print and Package:** Enables the language to display text on the terminal and initialize packages.
+- [x] **C Migration:** Core compiler architecture rewritten from Python to pure C.
+- [ ] **Print and Package:** Enables the language to display text on the terminal and initialize packages.
 - [ ] **Variables:** Enables the language to store data.
 - [ ] **Conditionals:** Support for `if`, `elif`, and `else`.
 - [ ] **Booleans:** Support for `True`, `False`, `0`, and `1`.
@@ -16,25 +17,25 @@ A programming language designed for ultimate simplicity on the outside, and monu
 
 ---
 
-## 🛠️ Quick Start (Prototype)
+## 🛠️ Quick Start
 
 ### Prerequisites
 
-You need **Python 3** and a C compiler like **GCC** installed on your system.
+You only need a C compiler like **GCC** or **Clang** installed on your system.
 
-### Installation
+### Installation & Compilation
 
 1. Clone the repository:
 
    ```fish
-   git clone https://github.com/ykaruusmp4/slfi.git
+   git clone https://github.com
    cd slfi
    ```
 
-2. Install the parser engine:
+2. Compile the native SLFI compiler:
 
    ```fish
-   pip install lark # or use a venv in Arch Linux and Others PEP Operational Systems.
+   gcc main.c -o slfi
    ```
 
 ### Running your first `.slfi` script
@@ -45,20 +46,18 @@ You need **Python 3** and a C compiler like **GCC** installed on your system.
    package main
 
    init main() {
-      print "Hello from SLFI!"; $ This is a Commentary! :3
+       print "Hello from SLFI!"; \$ This is a Commentary! :3
    }
-
    ```
 
-2. Compile and run using the prototype driver:
+2. Compile and run using the native binary (Work In Progress):
 
    ```fish
-     python slfi.py main.slfi # or any other way, the slfi.py just need to be side-by-side with the main.slfi
-    ./main
+   ./slfi main.slfi
    ```
 
 ---
 
 ## 📜 License
 
-This project is licensed under the AGPL License - see the LICENSE file for details.
+This project is licensed under the AGPLv3 License - see the LICENSE file for details.
