@@ -8,7 +8,7 @@ A programming language designed for ultimate simplicity on the outside, and monu
 
 ## 🚀 Features & Roadmap
 
-- [ ] **Print and Package:** Enables the language to display text on the terminal and initialize packages.
+- [x] **Print and Package:** Enables the language to display text on the terminal and initialize packages.
 - [ ] **Variables:** Enables the language to store data.
 - [ ] **Conditionals:** Support for `if`, `elif`, and `else`.
 - [ ] **Booleans:** Support for `True`, `False`, `0`, and `1`.
