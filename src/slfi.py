@@ -40,11 +40,11 @@ class SLFITranspiler(Transformer):
         inner_commands = "".join(args)
         return inner_commands
 
+    def package_decl(self, args):
+        return ""
+
     def program(self, args):
-        main_body = ""
-        for item in args:
-            if isinstance(item, str) and "package" not in item:
-                main_body += item
+        main_body = "".join([item for item in args if item])
 
         return f"""#include <stdio.h>
 
